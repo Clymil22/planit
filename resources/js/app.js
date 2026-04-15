@@ -3,6 +3,10 @@ import { Livewire } from '../../vendor/livewire/livewire/dist/livewire.esm';
 Livewire.start()
 
 import './bootstrap';
+import { supabase } from './supabase.js';
+
+// Make supabase available globally
+window.supabase = supabase;
 
 
 // Import Chart.js
